@@ -4,11 +4,19 @@ import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MemberApp {
     public static void main(String[] args) {
-        AppConfig appConfig = new AppConfig();
-        MemberService memberService = appConfig.memberService();
+//        AppConfig appConfig = new AppConfig();
+//        MemberService memberService = appConfig.memberService();
+
+        // 시작점. 스프링 컨테이너.
+        // 모든 객체 관리 (Bean)
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        // getBean (찾고자 하는 메서드 이름, 반환 타입)
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
 
 //        MemberService memberService = new MemberServiceImpl();

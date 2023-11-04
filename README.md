@@ -4,16 +4,15 @@
 
 ### 공부 방법
 1. 강의 듣고 따라 치기 (코드 깃 업로드)
-2. 관련 이론 공부 [[Github Wiki](https://github.com/ajung7038/spring-study/wiki) & [Velog](https://velog.io/@ajeong7038)] 정리
+2. 관련 이론 공부 [[Github Wiki](https://github.com/ajung7038/spring-study/wiki) & [Tistory](https://ajeong7038.tistory.com/category/Spring/JPA)] 정리
 3. 오류 발생 시 트러블슈팅 작성
 
 ### 기간
 
 💡 2023.09.05 ~
-💡 매주 일요일 오후 5시 정기 모임
+💡 매주 화요일 오후 8시 정기 모임
 
 ## 기록
 
-### 🌳 09
-- W3
-- W4
+### 🌳 11
+- W1

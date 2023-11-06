@@ -31,4 +31,11 @@ public class Category {
 
     @OneToMany(mappedBy = "parent")
     private List<Category> child = new ArrayList<>(); // 자식은 여러 개를 가질 수 있음
+
+
+    // == 연관 관계 메서드 == //
+    public void addChildCategory(Category child) {
+        this.child.add(child);
+        child.setParent(this);
+    }
 }

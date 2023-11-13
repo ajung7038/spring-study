@@ -12,10 +12,10 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class MemberService {
 
-    private MemberRepository memberRepository;
+    private final MemberRepository memberRepository; // 바뀔 일이 없기 때문에
 
-    @Autowired
-    public void setMemberRepository(MemberRepository memberRepository) {
+    @Autowired // 없어도 됨
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 

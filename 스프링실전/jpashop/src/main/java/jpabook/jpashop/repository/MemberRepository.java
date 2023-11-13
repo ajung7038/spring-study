@@ -21,11 +21,11 @@ public class MemberRepository {
         em.persist(member);
     }
 
-    /*
-    // 엔티티 매니저 팩토리 직접 주입
-    @PersistenceUnit
-    private EntityManagerFactory emf;
-     */
+    /**
+    * // 엔티티 매니저 팩토리 직접 주입
+    * @PersistenceUnit
+    * private EntityManagerFactory emf;
+     **/
 
     public Member findOne(Long id) {
         return em.find(Member.class, id); // 타입, PK

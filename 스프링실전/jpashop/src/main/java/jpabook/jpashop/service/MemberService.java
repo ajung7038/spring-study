@@ -2,6 +2,8 @@ package jpabook.jpashop.service;
 
 import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.repository.MemberRepository;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,14 +12,16 @@ import java.util.List;
 
 @Service // 컴포넌트 스캔의 대상
 @Transactional(readOnly = true)
+//@AllArgsConstructor
+@RequiredArgsConstructor
 public class MemberService {
 
     private final MemberRepository memberRepository; // 바뀔 일이 없기 때문에
 
-    @Autowired // 없어도 됨
-    public MemberService(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
+//    @Autowired // 없어도 됨
+//    public MemberService(MemberRepository memberRepository) {
+//        this.memberRepository = memberRepository;
+//    }
 
     /**
      * 회원 가입

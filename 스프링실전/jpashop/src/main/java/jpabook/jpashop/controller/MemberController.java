@@ -38,5 +38,6 @@ public class MemberController {
 
         memberService.join(member);
         return "redirect:/"; // 첫 번째 페이지로 이동
+        // ajeong
     }
 }
